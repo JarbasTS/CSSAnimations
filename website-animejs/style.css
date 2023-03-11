@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background: #222;
+}
+
+/* Menu superior */
+header {
+  position: fixed;
+  padding: 3rem 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+header ul {
+  display: flex;
+  gap: 4rem;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: 0.5s;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  color: #fff;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10rem;
+  gap: 10rem;
+}
+
+.content {
+  max-width: 70rem;
+}
+
+.content h2 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.content h2 b {
+  color: #0f0;
+}
+
+.content p {
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.content .btn {
+  padding: 1rem 1.5rem;
+  background: #fff;
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 2.5rem;
+  letter-spacing: 0.2rem;
+  transition: 0.5s ease-in-out;
+}
+
+.content .btn:hover {
+  letter-spacing: 0.4rem;
+}
+
+.container {
+  position: relative;
+  right: 10rem;
+  min-width: 40rem;
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .element {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  scale: 0.75;
+}
