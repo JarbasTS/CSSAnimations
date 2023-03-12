@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Smoke Text with CSS & Vanilla Javascript</title>
+  </head>
+  <body>
+    <section>
+      <p class="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, nihil! Necessitatibus quos,
+        veritatis tempora corrupti amet omnis non beatae quasi quibusdam, perferendis adipisci animi
+        quo obcaecati accusamus repellat fugit iure! Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Nesciunt unde consequuntur natus mollitia architecto necessitatibus quia
+        accusamus odio, repellendus hic et non, laborum at reprehenderit cupiditate alias eligendi
+        tempora voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum in harum
+        dignissimos labore. Quasi a ducimus quia enim. Facilis nulla officia porro a repudiandae,
+        optio fugiat iure quo rerum mollitia.
+      </p>
+    </section>
+
+    <script>
+      /* Transformando cada letra num span */
+      const text = document.querySelector('.text');
+      text.innerHTML = text.textContent.replace(/\S/g, '<span>$&</span>');
+
+      /*   Add a class active no span a medida que o mouse passa por cima   */
+      const letters = document.querySelectorAll('span');
+      for (let i = 0; i < letters.length; i++) {
+        letters[i].addEventListener('mouseover', function () {
+          letters[i].classList.add('active');
+        });
+      }
+    </script>
+  </body>
+</html>
